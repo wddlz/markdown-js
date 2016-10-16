@@ -36,6 +36,7 @@
     "README.md"
   ],
   "dependencies": {
+    "json-loader": "^0.5.4",
     "nopt": "~3.0.6"
   },
   "devDependencies": {
