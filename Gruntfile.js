@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     node_tap: {
       default_options: {
         options: {
-          outputType: 'cov',
+          outputType: 'tap',
           outputTo: 'console'
         },
         files: {
