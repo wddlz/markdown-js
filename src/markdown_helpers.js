@@ -10,7 +10,7 @@ define([], function (w) {
             uneval(this.toString()) +
             ", " +
             uneval(this.trailing) +
-            ", " +
+            ", " + 
             uneval(this.lineNumber) + 
             " )";
   } 
