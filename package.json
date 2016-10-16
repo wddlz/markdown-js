@@ -51,6 +51,7 @@
   },
   "scripts": {
     "test": "grunt test",
+    "static": "grunt static",
     "tap": "grunt node_tap",
     "lint": "grunt jshint",
     "prepublish": "grunt build"
