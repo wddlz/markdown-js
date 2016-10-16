@@ -11,7 +11,7 @@ define([], function (w) {
             ", " +
             uneval(this.trailing) +
             ", " +
-            uneval(this.lineNumber) +
+            uneval(this.lineNumber) + 
             " )";
   }
 
