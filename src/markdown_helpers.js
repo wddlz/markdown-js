@@ -26,7 +26,7 @@ define([], function (w) {
             util.inspect(this.lineNumber) +
             " )";
 
-  }
+  } 
 
   MarkdownHelpers.mk_block = function(block, trail, line) {
     // Be helpful for default case in tests.
