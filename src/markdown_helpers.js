@@ -13,7 +13,7 @@ define([], function (w) {
             ", " +
             uneval(this.lineNumber) + 
             " )";
-  }
+  } 
 
   // node
   function mk_block_inspect() {
