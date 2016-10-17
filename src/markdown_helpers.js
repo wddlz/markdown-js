@@ -84,4 +84,4 @@ define([], function (w) {
 
   return MarkdownHelpers;
 
-});
+}); 
