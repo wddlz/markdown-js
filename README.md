@@ -3,7 +3,6 @@
 [![Dependency Status](https://gemnasium.com/evilstreak/markdown-js.png)](https://gemnasium.com/evilstreak/markdown-js)
 
 # markdown-js
-TEST
 Yet another Markdown parser, this time for JavaScript. There's a few
 options that precede this project but they all treat Markdown to HTML
 conversion as a single step process. You pass Markdown in and get HTML
