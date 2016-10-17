@@ -51,7 +51,7 @@
   },
   "scripts": {
     "test": "tap ./test/*.t.js",
-    "static": "grunt static || true",
+    "static": "grunt static --force --no-color",
     "tap": "grunt node_tap",
     "lint": "grunt jshint",
     "prepublish": "grunt build"
