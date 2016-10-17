@@ -37,7 +37,7 @@ define([], function (w) {
     /* jshint -W053 */
     var s = new String(block);
     s.trailing = trail;
-    // To make it clear its not just a string
+    // To make it clear its not just a string 
     s.inspect = mk_block_inspect;
     s.toSource = mk_block_toSource;
 
