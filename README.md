@@ -2,7 +2,7 @@
 [![Build Status](https://secure.travis-ci.org/evilstreak/markdown-js.png)](https://travis-ci.org/evilstreak/markdown-js)
 [![Dependency Status](https://gemnasium.com/evilstreak/markdown-js.png)](https://gemnasium.com/evilstreak/markdown-js)
 
-# markdown-js test
+# markdown-js halp
 
 Yet another Markdown parser, this time for JavaScript. There's a few
 options that precede this project but they all treat Markdown to HTML
