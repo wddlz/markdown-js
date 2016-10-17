@@ -35,7 +35,7 @@ define([], function (w) {
 
     // We actually need a String object, not a string primitive
     /* jshint -W053 */
-    var s =  new String(block);
+    var s =   new String(block);
     s.trailing = trail;
     // To make it clear its not just a string 
     s.inspect = mk_block_inspect;
