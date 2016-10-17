@@ -24,7 +24,7 @@ define([], function (w) {
             util.inspect(this.trailing) +
             ", " +
             util.inspect(this.lineNumber) +
-            " )";
+            " )"; 
 
   } 
 
