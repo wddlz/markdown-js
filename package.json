@@ -50,8 +50,8 @@
     "tap": "~7.1.2"
   },
   "scripts": {
-    "test": "grunt test",
-    "static": "grunt static",
+    "test": "tap ./test/*.t.js",
+    "static": "grunt static --force --no-color",
     "tap": "grunt node_tap",
     "lint": "grunt jshint",
     "prepublish": "grunt build"
