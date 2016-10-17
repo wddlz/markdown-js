@@ -9,7 +9,7 @@ define([], function (w) {
     return "Markdown.mk_block( " +
             uneval(this.toString()) +
             ", " +
-            uneval(this.trailing) +    
+            uneval(this.trailing) +     
             ", " +      
             uneval(this.lineNumber) + 
             " )";
