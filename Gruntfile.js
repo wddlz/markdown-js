@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         "laxcomma": true,
         "lastsemic": true,
         "loopfunc": true,
-        "maxstatements": 80, 
+        "maxstatements": 10, 
         "noarg": true,
         "newcap": true,
         "plusplus": false,
