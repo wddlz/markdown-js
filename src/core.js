@@ -32,7 +32,7 @@ define([], function() {
   var Markdown = function(dialect) {
     switch (typeof dialect) {
     case "undefined":
-      this.dialect = Markdown.dialects.Gruber;
+      this.dialect = Markdown.dialects.Gruber; 
       break;
     case "object":
       this.dialect = dialect;
