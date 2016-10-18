@@ -1,7 +1,7 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
 
 define([], function (w) {
-
+  // helpers of markdown!
   var MarkdownHelpers = {};
 
   // For Spidermonkey based engines
