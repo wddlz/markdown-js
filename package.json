@@ -46,13 +46,15 @@
     "grunt-contrib-uglify": "~0.2.4",
     "grunt-node-tap": "0.1.46",
     "requirejs": "~2.1.8",
-    "tap": "~0.3.3"
+    "tap": "~0.3.3",
+    "http-proxy": "^1.9.0",
+    "request": "^2.54.0",
+    "express": "^4.12.3"
   },
   "scripts": {
     "test": "grunt test",
     "tap": "grunt node_tap",
-    "lint": "grunt jshint",
-    "prepublish": "grunt build"
+    "lint": "grunt jshint"
   },
   "engines": {
     "node": ">=0.10.0"
