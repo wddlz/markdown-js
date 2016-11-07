@@ -4,12 +4,11 @@ var app = express()
 
 var args = process.argv.slice(2);
 var PORT = args[0];
-PORT = 80;
+PORT = 8080;
 
 // Root page
 app.get('/', function(req, res) {
-    res.status(500).send('Something broke!');
-    // res.send("Hello Server: ");
+    res.send("Hello World");
 });
 
 var server = app.listen(PORT, function () {
