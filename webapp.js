@@ -4,7 +4,7 @@ var app = express()
 
 var args = process.argv.slice(2);
 var PORT = args[0];
-PORT = 8080;
+PORT = 9090;
 
 // Root page
 app.get('/', function(req, res) {
