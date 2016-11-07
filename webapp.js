@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
         } else {
             console.log('feature flag off');
         }
-    }
+    });
     res.send(message);
 });
 
