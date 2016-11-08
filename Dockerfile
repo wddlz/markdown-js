@@ -13,4 +13,4 @@ RUN npm install --silent
 COPY . /usr/src/app
 
 EXPOSE 9090
-CMD [ "forever", "start", "webapp.js" ]
+CMD [ "node", "webapp.js" ]
