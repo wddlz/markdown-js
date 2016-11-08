@@ -5,15 +5,9 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 RUN npm install forever -g
 
-# Install redis
-RUN wget http://download.redis.io/releases/redis-3.2.5.tar.gz
-RUN tar xzf redis-3.2.5.tar.gz
-RUN cd redis-3.2.5
-RUN make
-
 # Install app dependencies
 COPY package.json /usr/src/app/
-RUN npm install
+RUN npm install --silent
 
 # Bundle app source
 COPY . /usr/src/app
