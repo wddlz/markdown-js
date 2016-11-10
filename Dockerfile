@@ -1,3 +1,4 @@
+# Take base image from node repo
 FROM node:argon
 
 # Create app directory
@@ -8,8 +9,16 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install --silent
 
-# Bundle app source
+# Bundle app & monitoring source
 COPY . /usr/src/app
 
+# Building the monitoring stuff
+WORKDIR  /usr/src/app/monitoring
+RUN npm install --silent
+RUN chmod +x run_all.sh 
+
+# Expose the webapp
 EXPOSE 9090
-CMD [ "node", "webapp.js" ]
+
+# This should run both webapp & monitor
+ENTRYPOINT ["./run_all.sh"] 
