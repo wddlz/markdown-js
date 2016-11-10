@@ -13,7 +13,7 @@ PORT = 9090;
 app.get('/', function (req, res) {
   var message = "Hello World from Production!";
   client.exists('featureFlag', function (err, reply) {
-    if (reply === 1) {
+    if (reply == 1) {
       console.log('feature flag on');
       message = "NEW FEATURE";
     } else {
