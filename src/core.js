@@ -1,4 +1,4 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
+if (typeof define !== 'function') { var define = require('amdefine')(module) } 
 
 define([], function() {
 
@@ -32,7 +32,7 @@ define([], function() {
   var Markdown = function(dialect) {
     switch (typeof dialect) {
     case "undefined":
-      this.dialect = Markdown.dialects.Gruber;
+      this.dialect = Markdown.dialects.Gruber; 
       break;
     case "object":
       this.dialect = dialect;

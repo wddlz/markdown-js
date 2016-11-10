@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'], 
       options: {
         "browser": false,
         "maxerr": 100,
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         "laxcomma": true,
         "lastsemic": true,
         "loopfunc": true,
-        "maxstatements": 80,
+        "maxstatements": 80, 
         "noarg": true,
         "newcap": true,
         "plusplus": false,

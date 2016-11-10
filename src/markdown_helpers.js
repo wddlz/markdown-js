@@ -1,7 +1,7 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
 
 define([], function (w) {
-
+  // helpers of markdown!
   var MarkdownHelpers = {};
 
   // For Spidermonkey based engines
@@ -9,11 +9,11 @@ define([], function (w) {
     return "Markdown.mk_block( " +
             uneval(this.toString()) +
             ", " +
-            uneval(this.trailing) +
-            ", " +
-            uneval(this.lineNumber) +
+            uneval(this.trailing) +       
+            ", " +      
+            uneval(this.lineNumber) + 
             " )";
-  }
+  } 
 
   // node
   function mk_block_inspect() {
@@ -24,9 +24,9 @@ define([], function (w) {
             util.inspect(this.trailing) +
             ", " +
             util.inspect(this.lineNumber) +
-            " )";
+            " )";  
 
-  }
+  } 
 
   MarkdownHelpers.mk_block = function(block, trail, line) {
     // Be helpful for default case in tests.
@@ -35,9 +35,9 @@ define([], function (w) {
 
     // We actually need a String object, not a string primitive
     /* jshint -W053 */
-    var s = new String(block);
+    var s =   new String(block);
     s.trailing = trail;
-    // To make it clear its not just a string
+    // To make it clear its not just a string 
     s.inspect = mk_block_inspect;
     s.toSource = mk_block_toSource;
 
@@ -84,4 +84,4 @@ define([], function (w) {
 
   return MarkdownHelpers;
 
-});
+});               
