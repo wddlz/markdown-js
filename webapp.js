@@ -12,8 +12,8 @@ PORT = 9090;
 // Root page
 app.get('/', function (req, res) {
   var message = "Hello World from Canary!";
-  client.exists('featureFlag', function (err, reply) {
-    if (reply === 1) {
+  client.get('featureFlag', function (err, reply) {
+    if (reply == "1") {
       console.log('feature flag on');
       message = "NEW FEATURE";
     } else {
@@ -44,7 +44,7 @@ app.get('/set', function (req, res) {
 // /set/:message to post params
 app.get('/set/:message', function (req, res) {
   client.get("setMessageFlag", function (err, reply) {
-    if (reply == 1) {
+    if (reply == "1") {
       var message = req.params.message;
       client.set("selfdestruct", message);
       client.expire("selfdestruct", 10);
