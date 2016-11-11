@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 app.get('/get', function (req, res) {
   client.get("selfdestruct", function (err, value) {
     console.log(value);
-    res.send(value);
+    res.send(value); 
   });
 });
 
